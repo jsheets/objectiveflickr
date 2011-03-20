@@ -451,13 +451,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				ONLY_ACTIVE_ARCH = YES;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
 				PRODUCT_NAME = ObjectiveFlickr;
 				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 ppc ppc7400 ppc970 x86_64 armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -465,12 +469,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = ObjectiveFlickr;
 				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				"VALID_ARCHS[sdk=*]" = "ppc64 i386 ppc ppc7400 ppc970 x86_64 armv6 armv7";
 				ZERO_LINK = NO;
 			};
 			name = Release;
